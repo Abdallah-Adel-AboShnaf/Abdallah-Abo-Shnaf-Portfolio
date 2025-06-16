@@ -1,10 +1,22 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight, Download, Mail, Linkedin, Github } from "lucide-react";
+import Typed from "typed.js";
 
 const Home = () => {
+  const initTypedAnimation = (elementId, strings) => {
+    new Typed(`#${elementId}`, {
+      strings: strings,
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+      fadeOut: true,
+      fadeOutClass: "typed-fade-out",
+      smartBackspace: true,
+    });
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-4xl w-full">
@@ -20,13 +32,16 @@ const Home = () => {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-800">
                 Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                <span
+                  id="name-typed"
+                  className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent"
+                >
                   Abdallah Adel
                 </span>
               </h1>
 
               <h2 className="text-2xl lg:text-3xl text-slate-600 font-light">
-                Data Scientist & Machine Learning Engineer
+                <span id="job-typed">Data Scientist</span>
               </h2>
 
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -90,6 +105,35 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* تفعيل animations بعد تحميل الصفحة */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            document.addEventListener('DOMContentLoaded', function() {
+              const nameTyped = new Typed('#name-typed', {
+                strings: ['Abdallah Adel'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                loop: true,
+                fadeOut: true,
+                fadeOutClass: 'typed-fade-out',
+                smartBackspace: true,
+              });
+
+              const jobTyped = new Typed('#job-typed', {
+                strings: ['Data Scientist', 'Machine Learning Engineer', 'AI Enthusiast'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                loop: true,
+                fadeOut: true,
+                fadeOutClass: 'typed-fade-out',
+                smartBackspace: true,
+              });
+            });
+          `,
+        }}
+      />
     </div>
   );
 };
