@@ -28,9 +28,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {/* Logo/Brand */}
             <div className="flex items-center">
               <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                Abdallah
+                Portfolio
               </h1>
-              <span className="ml-2 text-sm text-slate-600 hidden sm:block">Data Scientist</span>
             </div>
 
             {/* Desktop Navigation */}
