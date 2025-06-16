@@ -14,7 +14,7 @@ const Home = () => {
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-teal-500 p-1">
               <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center overflow-hidden">
                 <img
-                  src="/path-to-your-image.jpg"
+                  src="11zon_cropped.png"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
