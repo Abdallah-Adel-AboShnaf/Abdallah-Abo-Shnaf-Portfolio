@@ -2,11 +2,13 @@
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
+import { Code, Brain, Database, Cloud } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       category: "Programming Languages",
+      icon: Code,
       skills: [
         { name: "Python", level: 95, color: "bg-blue-500" },
         { name: "R", level: 85, color: "bg-teal-500" },
@@ -17,6 +19,7 @@ const Skills = () => {
     },
     {
       category: "Machine Learning & AI",
+      icon: Brain,
       skills: [
         { name: "Scikit-learn", level: 95, color: "bg-blue-500" },
         { name: "TensorFlow", level: 90, color: "bg-orange-500" },
@@ -27,6 +30,7 @@ const Skills = () => {
     },
     {
       category: "Data Science Tools",
+      icon: Database,
       skills: [
         { name: "Pandas", level: 95, color: "bg-blue-500" },
         { name: "NumPy", level: 93, color: "bg-teal-500" },
@@ -37,6 +41,7 @@ const Skills = () => {
     },
     {
       category: "Cloud & Big Data",
+      icon: Cloud,
       skills: [
         { name: "AWS", level: 85, color: "bg-orange-500" },
         { name: "Google Cloud", level: 80, color: "bg-blue-500" },
@@ -73,32 +78,40 @@ const Skills = () => {
 
         {/* Technical Skills */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
-            <Card key={categoryIndex} className="p-8 bg-white/80 backdrop-blur-sm border-slate-200 hover:shadow-lg transition-shadow">
-              <div className="space-y-6">
-                <h2 className="text-xl font-semibold text-slate-800 border-b border-slate-200 pb-3">
-                  {category.category}
-                </h2>
-                
-                <div className="space-y-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="font-medium text-slate-700">{skill.name}</span>
-                        <span className="text-sm text-slate-500">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-slate-200 rounded-full h-2">
-                        <div
-                          className={`h-2 rounded-full ${skill.color} transition-all duration-1000 ease-out`}
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+          {skillCategories.map((category, categoryIndex) => {
+            const Icon = category.icon;
+            return (
+              <Card key={categoryIndex} className="p-8 bg-white/80 backdrop-blur-sm border-slate-200 hover:shadow-lg transition-shadow">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-3 border-b border-slate-200 pb-3">
+                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-teal-500 rounded-lg flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-white" />
                     </div>
-                  ))}
+                    <h2 className="text-xl font-semibold text-slate-800">
+                      {category.category}
+                    </h2>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    {category.skills.map((skill, skillIndex) => (
+                      <div key={skillIndex} className="space-y-2">
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-slate-700">{skill.name}</span>
+                          <span className="text-sm text-slate-500">{skill.level}%</span>
+                        </div>
+                        <div className="w-full bg-slate-200 rounded-full h-2">
+                          <div
+                            className={`h-2 rounded-full ${skill.color} transition-all duration-1000 ease-out`}
+                            style={{ width: `${skill.level}%` }}
+                          ></div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </Card>
-          ))}
+              </Card>
+            );
+          })}
         </div>
 
         {/* Soft Skills */}
@@ -141,35 +154,6 @@ const Skills = () => {
                   <span className="text-sm font-medium text-slate-700">{tool}</span>
                 </div>
               ))}
-            </div>
-          </div>
-        </Card>
-
-        {/* Skill Summary */}
-        <Card className="p-8 bg-white/80 backdrop-blur-sm border-slate-200">
-          <div className="text-center space-y-6">
-            <h2 className="text-2xl font-semibold text-slate-800">Expertise Overview</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
-                <div className="text-sm text-slate-600">Programming Languages</div>
-              </div>
-              
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-teal-600 mb-2">10+</div>
-                <div className="text-sm text-slate-600">ML Frameworks</div>
-              </div>
-              
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
-                <div className="text-sm text-slate-600">Tools & Platforms</div>
-              </div>
-              
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-green-600 mb-2">3</div>
-                <div className="text-sm text-slate-600">Cloud Platforms</div>
-              </div>
             </div>
           </div>
         </Card>

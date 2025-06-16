@@ -88,12 +88,6 @@ const Certifications = () => {
     }
   ];
 
-  const upcomingCerts = [
-    "Kubernetes Certified Application Developer",
-    "Apache Spark Certified Developer",
-    "Snowflake SnowPro Core Certification"
-  ];
-
   const getLevelColor = (level: string) => {
     switch (level) {
       case "Expert": return "bg-red-100 text-red-800";
@@ -176,56 +170,6 @@ const Certifications = () => {
             </Card>
           ))}
         </div>
-
-        {/* Upcoming Certifications */}
-        <Card className="p-8 bg-gradient-to-r from-blue-50 to-teal-50 border-slate-200">
-          <div className="space-y-6">
-            <div className="text-center">
-              <h2 className="text-2xl font-semibold text-slate-800 mb-2">Upcoming Certifications</h2>
-              <p className="text-slate-600">Planned certifications for continuous professional development</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {upcomingCerts.map((cert, index) => (
-                <div key={index} className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-teal-500 rounded-full flex items-center justify-center">
-                    <span className="text-white text-sm font-semibold">{index + 1}</span>
-                  </div>
-                  <span className="text-slate-700 font-medium text-sm">{cert}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Card>
-
-        {/* Certification Statistics */}
-        <Card className="p-8 bg-white/80 backdrop-blur-sm border-slate-200">
-          <div className="text-center space-y-6">
-            <h2 className="text-2xl font-semibold text-slate-800">Certification Overview</h2>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-blue-600 mb-2">8</div>
-                <div className="text-sm text-slate-600">Total Certifications</div>
-              </div>
-              
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-teal-600 mb-2">3</div>
-                <div className="text-sm text-slate-600">Cloud Platforms</div>
-              </div>
-              
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-purple-600 mb-2">5</div>
-                <div className="text-sm text-slate-600">Professional Level</div>
-              </div>
-              
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-green-600 mb-2">2023</div>
-                <div className="text-sm text-slate-600">Latest Achievement</div>
-              </div>
-            </div>
-          </div>
-        </Card>
       </div>
     </div>
   );

@@ -142,25 +142,6 @@ const Contact = () => {
                 })}
               </div>
             </Card>
-
-            {/* Availability */}
-            <Card className="p-6 bg-gradient-to-r from-blue-50 to-teal-50 border-slate-200">
-              <h2 className="text-xl font-semibold text-slate-800 mb-4">Availability</h2>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-slate-700">Available for new projects</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span className="text-slate-700">Open to consulting opportunities</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                  <span className="text-slate-700">Interested in research collaborations</span>
-                </div>
-              </div>
-            </Card>
           </div>
 
           {/* Contact Form */}

@@ -3,8 +3,11 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { useState } from "react";
 
 const Projects = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
   const projects = [
     {
       title: "E-commerce Recommendation System",
@@ -118,6 +121,10 @@ const Projects = () => {
 
   const categories = ["All", "Machine Learning", "Deep Learning", "Computer Vision", "NLP", "Operations Research", "IoT & Analytics"];
 
+  const filteredProjects = selectedCategory === "All" 
+    ? projects 
+    : projects.filter(project => project.category === selectedCategory);
+
   return (
     <div className="min-h-screen p-6 lg:p-12">
       <div className="max-w-7xl mx-auto space-y-12 animate-fade-in">
@@ -136,8 +143,13 @@ const Projects = () => {
           {categories.map((category) => (
             <Badge
               key={category}
-              variant="secondary"
-              className="px-4 py-2 cursor-pointer hover:bg-blue-100 hover:text-blue-800 transition-colors"
+              variant={selectedCategory === category ? "default" : "secondary"}
+              className={`px-4 py-2 cursor-pointer transition-colors ${
+                selectedCategory === category 
+                  ? "bg-gradient-to-r from-blue-600 to-teal-600 text-white" 
+                  : "hover:bg-blue-100 hover:text-blue-800"
+              }`}
+              onClick={() => setSelectedCategory(category)}
             >
               {category}
             </Badge>
@@ -146,7 +158,7 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <Card key={index} className="overflow-hidden bg-white/80 backdrop-blur-sm border-slate-200 hover:shadow-xl transition-all duration-300 group">
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden">
@@ -218,34 +230,12 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Project Statistics */}
-        <Card className="p-8 bg-gradient-to-r from-blue-50 to-teal-50 border-slate-200">
-          <div className="text-center space-y-6">
-            <h2 className="text-2xl font-semibold text-slate-800">Project Impact</h2>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-1">20+</div>
-                <div className="text-sm text-slate-600">Total Projects</div>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-3xl font-bold text-teal-600 mb-1">15</div>
-                <div className="text-sm text-slate-600">In Production</div>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-1">1M+</div>
-                <div className="text-sm text-slate-600">Users Impacted</div>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-1">$5M+</div>
-                <div className="text-sm text-slate-600">Value Generated</div>
-              </div>
-            </div>
+        {/* Show message if no projects match filter */}
+        {filteredProjects.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-slate-500">No projects found for the selected category.</p>
           </div>
-        </Card>
+        )}
       </div>
     </div>
   );

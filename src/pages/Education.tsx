@@ -52,13 +52,6 @@ const Education = () => {
     }
   ];
 
-  const certifications = [
-    "AWS Certified Machine Learning - Specialty",
-    "Google Cloud Professional Data Engineer",
-    "Microsoft Azure Data Scientist Associate",
-    "TensorFlow Developer Certificate"
-  ];
-
   return (
     <div className="min-h-screen p-6 lg:p-12">
       <div className="max-w-4xl mx-auto space-y-12 animate-fade-in">
@@ -146,49 +139,6 @@ const Education = () => {
             ))}
           </div>
         </div>
-
-        {/* Professional Certifications */}
-        <Card className="p-8 bg-gradient-to-r from-blue-50 to-teal-50 border-slate-200">
-          <div className="space-y-6">
-            <div className="text-center">
-              <h2 className="text-2xl font-semibold text-slate-800 mb-2">Professional Certifications</h2>
-              <p className="text-slate-600">Continuous learning and professional development</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {certifications.map((cert, index) => (
-                <div key={index} className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                  <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-teal-500"></div>
-                  <span className="text-slate-700 font-medium">{cert}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Card>
-
-        {/* Academic Achievements */}
-        <Card className="p-8 bg-white/80 backdrop-blur-sm border-slate-200">
-          <div className="text-center space-y-6">
-            <h2 className="text-2xl font-semibold text-slate-800">Academic Achievements</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-blue-600 mb-2">3.8</div>
-                <div className="text-sm text-slate-600">Master's GPA</div>
-              </div>
-              
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-teal-600 mb-2">3.6</div>
-                <div className="text-sm text-slate-600">Bachelor's GPA</div>
-              </div>
-              
-              <div className="text-center p-4">
-                <div className="text-3xl font-bold text-purple-600 mb-2">4+</div>
-                <div className="text-sm text-slate-600">Cloud Certifications</div>
-              </div>
-            </div>
-          </div>
-        </Card>
       </div>
     </div>
   );

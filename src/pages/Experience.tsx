@@ -123,31 +123,6 @@ const Experience = () => {
             ))}
           </div>
         </div>
-
-        {/* Summary Stats */}
-        <Card className="p-8 bg-gradient-to-r from-blue-50 to-teal-50 border-slate-200">
-          <div className="text-center space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-800">Career Highlights</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-1">5+</div>
-                <div className="text-sm text-slate-600">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-teal-600 mb-1">50+</div>
-                <div className="text-sm text-slate-600">Projects Delivered</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-1">15+</div>
-                <div className="text-sm text-slate-600">ML Models in Prod</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-1">3</div>
-                <div className="text-sm text-slate-600">Research Papers</div>
-              </div>
-            </div>
-          </div>
-        </Card>
       </div>
     </div>
   );
