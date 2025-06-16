@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight, Download, Mail, Linkedin, Github } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
@@ -20,12 +21,33 @@ const Home = () => {
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-800">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                  Abdallah Adel
+                  <TypeAnimation
+                    sequence={[
+                      'Abdallah Adel',
+                      2000,
+                      '',
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    repeat={Infinity}
+                  />
                 </span>
               </h1>
 
               <h2 className="text-2xl lg:text-3xl text-slate-600 font-light">
-                Data Scientist & Machine Learning Engineer
+                <TypeAnimation
+                  sequence={[
+                    'Data Scientist',
+                    2000,
+                    'AI Developer',
+                    2000,
+                    'ML Engineer',
+                    2000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                />
               </h2>
 
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
