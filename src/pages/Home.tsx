@@ -12,10 +12,15 @@ const Home = () => {
           {/* Hero Section */}
           <div className="space-y-6">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-teal-500 p-1">
-              <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center">
-                <span className="text-4xl font-bold text-slate-600">A</span>
+              <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/path-to-your-image.jpg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
+
 
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-800">
@@ -24,8 +29,9 @@ const Home = () => {
                   <TypeAnimation
                     sequence={[
                       'Abdallah Adel',
-                      2000,
+                      1000,
                       '',
+                      500,
                     ]}
                     wrapper="span"
                     speed={50}
@@ -41,9 +47,9 @@ const Home = () => {
                   <TypeAnimation
                     sequence={[
                       'Data Scientist',
-                      2000,
+                      1500,
                       'ML Engineer',
-                      2000,
+                      1500,
                     ]}
                     wrapper="span"
                     speed={50}
@@ -54,9 +60,7 @@ const Home = () => {
 
 
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                Passionate about transforming data into actionable insights and building
-                intelligent systems that solve real-world problems. Specialized in machine
-                learning, statistical analysis, and data visualization.
+                I turn data into direction. With a focus on machine learning, analytics, and visualization, I build smart solutions that simplify complexity and deliver real-world impact.
               </p>
             </div>
           </div>
@@ -70,9 +74,14 @@ const Home = () => {
               </Button>
             </Link>
 
-            <Button variant="outline" size="lg" className="border-slate-300 hover:bg-slate-50">
-              <Download className="mr-2 h-4 w-4" />
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-slate-300 hover:bg-slate-50"
+              onClick={() => window.open("https://drive.google.com/file/d/1Z1M18WNf78iBTE9rpnbN1FqK9dtvBI23/view?usp=sharing",  "_blank")}
+              >
               Download CV
+              <Download className="mr-2 h-4 w-4" />
             </Button>
           </div>
 
@@ -80,14 +89,14 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <Card className="p-6 bg-white/80 backdrop-blur-sm border-slate-200 hover:shadow-lg transition-shadow">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">1+</div>
                 <div className="text-slate-600">Years Experience</div>
               </div>
             </Card>
 
             <Card className="p-6 bg-white/80 backdrop-blur-sm border-slate-200 hover:shadow-lg transition-shadow">
               <div className="text-center">
-                <div className="text-3xl font-bold text-teal-600 mb-2">20+</div>
+                <div className="text-3xl font-bold text-teal-600 mb-2">7+</div>
                 <div className="text-slate-600">Projects Completed</div>
               </div>
             </Card>
@@ -102,15 +111,21 @@ const Home = () => {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-4 pt-8">
-            <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-              <Mail className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-              <Github className="h-5 w-5" />
-            </Button>
+            <a href="abdallah.adel.abdallah10@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <Mail className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/abdallah-adel-aboshnaf/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="https://github.com/Abdallah-Adel-AboShnaf" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>
