@@ -36,21 +36,22 @@ const Home = () => {
 
           {/* agsdgsdfhfgjghkdhkjkjkkjhl*/}
 
-              <h2 className="text-2xl lg:text-3xl text-slate-600 font-light">
-                <TypeAnimation
-                  sequence={[
-                    'Data Scientist',
-                    2000,
-                    'AI Developer',
-                    2000,
-                    'ML Engineer',
-                    2000,
-                  ]}
-                  wrapper="span"
-                  speed={50}
-                  repeat={Infinity}
-                />
+              <h2 className="text-3xl lg:text-4xl font-bold">
+                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                  <TypeAnimation
+                    sequence={[
+                      'Data Scientist',
+                      2000,
+                      'ML Engineer',
+                      2000,
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    repeat={Infinity}
+                  />
+                </span>
               </h2>
+
 
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
                 Passionate about transforming data into actionable insights and building
