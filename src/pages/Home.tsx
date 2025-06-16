@@ -34,6 +34,8 @@ const Home = () => {
                 </span>
               </h1>
 
+          {/* agsdgsdfhfgjghkdhkjkjkkjhl*/}
+
               <h2 className="text-2xl lg:text-3xl text-slate-600 font-light">
                 <TypeAnimation
                   sequence={[
