@@ -14,13 +14,12 @@ const Home = () => {
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-teal-500 p-1">
               <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center overflow-hidden">
                 <img
-                  src="src/pages/11zon_cropped.png"
+                  src="/lovable-uploads/097f3196-c743-4c18-8052-1eb8d0d60b71.png"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
-
 
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-800">
@@ -40,8 +39,6 @@ const Home = () => {
                 </span>
               </h1>
 
-          {/* agsdgsdfhfgjghkdhkjkjkkjhl*/}
-
               <h2 className="text-3xl lg:text-4xl font-bold">
                 <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
                   <TypeAnimation
@@ -57,7 +54,6 @@ const Home = () => {
                   />
                 </span>
               </h2>
-
 
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
                 I turn data into direction. With a focus on machine learning, analytics, and visualization, I build smart solutions that simplify complexity and deliver real-world impact.

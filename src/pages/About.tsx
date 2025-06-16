@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -22,8 +21,12 @@ const About = () => {
           <div className="lg:col-span-1">
             <Card className="p-6 bg-white/80 backdrop-blur-sm border-slate-200 text-center">
               <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-teal-500 p-1 mb-6">
-                <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-slate-600">A</span>
+                <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/lovable-uploads/097f3196-c743-4c18-8052-1eb8d0d60b71.png"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               
