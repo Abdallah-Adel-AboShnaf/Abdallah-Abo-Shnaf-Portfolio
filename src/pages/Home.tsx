@@ -44,11 +44,12 @@ const Home = () => {
                     sequence={[
                       'Data Scientist',
                       1500,
-                      'ML Engineer',
+                      'Data Analyst',
+                      1500,
+                      'Machine Learning Engineer',
                       1500,
                     ]}
-                    wrapper="span"
-                    speed={50}
+                    speed={70}
                     repeat={Infinity}
                   />
                 </span>
