@@ -38,22 +38,20 @@ const Home = () => {
                 </span>
               </h1>
 
-              <h2 className="text-4xl md:text-5xl text-sky-700 font-bold mb-8 max-w-3xl mx-auto">
-                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                  <TypeAnimation
-                    sequence={[
-                      'Data Scientist',
-                      1500,
-                      'Data Analyst',
-                      1500,
-                      'Machine Learning Engineer',
-                      1500,
-                    ]}
-                    speed={70}
-                    repeat={Infinity}
-                  />
-                </span>
-              </h2>
+              <p className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                <TypeAnimation
+                  sequence={[
+                    'Data Scientist',
+                    1500,
+                    'Data Analyst',
+                    1500,
+                    'Machine Learning Engineer',
+                    1500,
+                  ]}
+                  speed={70}
+                  repeat={Infinity}
+                />
+              </p>
 
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
                 I turn data into direction. With a focus on machine learning, analytics, and visualization, I build smart solutions that simplify complexity and deliver real-world impact.
