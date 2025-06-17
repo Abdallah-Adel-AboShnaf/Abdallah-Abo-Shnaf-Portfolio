@@ -22,18 +22,17 @@ const Home = () => {
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-slate-800">
-                Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-7xl font-bold text-sky-800 mb-6">
+                Hi, I'm{' '}
+                <span className="text-sky-600">
                   <TypeAnimation
                     sequence={[
                       'Abdallah Adel',
-                      1000,
-                      '',
-                      500,
+                      1000, // pause for a second after typing
+                      '',   // remove text
+                      500,  // pause before typing again
                     ]}
-                    wrapper="span"
-                    speed={50}
+                    speed={70}
                     repeat={Infinity}
                   />
                 </span>
