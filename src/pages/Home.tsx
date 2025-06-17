@@ -24,7 +24,7 @@ const Home = () => {
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold text-sky-800 mb-6">
                 Hi, I'm{' '}
-                <span className="text-sky-600">
+                 <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
                   <TypeAnimation
                     sequence={[
                       'Abdallah Adel',
@@ -38,20 +38,22 @@ const Home = () => {
                 </span>
               </h1>
 
-               <p className="text-4xl md:text-5xl text-sky-700 font-bold mb-8 max-w-3xl mx-auto">
-                <TypeAnimation
-                  sequence={[
-                    'Data Scientist',
-                    1500,
-                    'Data Analyst',
-                    1500,
-                    'Machine Learning Engineer',
-                    1500,
-                  ]}
-                  speed={70}
-                  repeat={Infinity}
-                />
-              </p>
+              <h2 className="text-3xl lg:text-4xl font-bold">
+                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                  <TypeAnimation
+                    sequence={[
+                      'Data Scientist',
+                      1500,
+                      'Data Analyst',
+                      1500,
+                      'Machine Learning Engineer',
+                      1500,
+                    ]}
+                    speed={70}
+                    repeat={Infinity}
+                  />
+                </span>
+              </h2>
 
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
                 I turn data into direction. With a focus on machine learning, analytics, and visualization, I build smart solutions that simplify complexity and deliver real-world impact.
