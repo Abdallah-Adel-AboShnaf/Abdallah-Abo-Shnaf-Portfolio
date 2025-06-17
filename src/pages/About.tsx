@@ -30,13 +30,13 @@ const About = () => {
                 </div>
               </div>
               
-              <h3 className="text-xl font-semibold text-slate-800 mb-2">Abdallah</h3>
-              <p className="text-slate-600 mb-4">Data Scientist</p>
+              <h2 className="text-xl font-semibold text-slate-800 mb-2">Abdallah Adel</h2>
+              <h3 className="text-slate-600 mb-4">Data Scientist</h3>
               
               <div className="space-y-2 text-sm text-slate-600">
-                <div>📍 Location: Cairo, Egypt</div>
-                <div>🎓 Master's in Data Science</div>
-                <div>💼 5+ Years Experience</div>
+                <div>📍 Location: Giza, Egypt</div>
+                <div>🎓 Bachelor in Data Science</div>
+                <div>💼 2+ Years Experience</div>
                 <div>🌟 Machine Learning Expert</div>
               </div>
             </Card>
@@ -48,24 +48,20 @@ const About = () => {
               <h2 className="text-2xl font-semibold text-slate-800 mb-4">My Story</h2>
               <div className="prose prose-slate max-w-none space-y-4 text-slate-600">
                 <p>
-                  I'm a passionate data scientist with over 5 years of experience transforming 
-                  complex data into actionable business insights. My journey began with a 
-                  fascination for mathematics and statistics, which evolved into a deep love 
-                  for machine learning and artificial intelligence.
+                  A passionate Data Scientist with a strong foundation in data analysis, 
+                  machine learning, and statistical modeling.
+                  I am currently pursuing a degree in Data Science and 
+                  have been awarded competitive scholarships from both DEPI and ALX Africa.
                 </p>
                 
                 <p>
-                  Throughout my career, I've had the privilege of working on diverse projects 
-                  ranging from predictive analytics and recommendation systems to natural 
-                  language processing and computer vision. I believe in the power of data 
-                  to drive innovation and solve real-world challenges.
+                  My technical skill set includes Python, C, C++, SQL Server, and MySQL. 
+                  I am committed to delivering data-driven solutions with a focus on both precision and efficiency.
                 </p>
                 
                 <p>
-                  When I'm not analyzing data or building models, you can find me contributing 
-                  to open-source projects, writing technical articles, or exploring the latest 
-                  developments in AI research. I'm always eager to learn new technologies and 
-                  collaborate with like-minded professionals.
+                  Driven by curiosity and a dedication to solving real-world problems, 
+                  I aim to make meaningful contributions in the world of Data Science.
                 </p>
               </div>
             </Card>
@@ -79,8 +75,8 @@ const About = () => {
                   <h3 className="text-lg font-medium text-slate-700 mb-3">Core Interests</h3>
                   <div className="flex flex-wrap gap-2">
                     {[
-                      "Machine Learning", "Deep Learning", "Natural Language Processing",
-                      "Computer Vision", "Statistical Analysis", "Data Visualization",
+                      "Data Scientist","Machine Learning", "Deep Learning",
+                      "Statistical Analysis", "Data Visualization",
                       "Big Data", "Cloud Computing", "MLOps"
                     ].map((interest) => (
                       <Badge key={interest} variant="secondary" className="bg-blue-100 text-blue-800">
