@@ -25,34 +25,11 @@ const Education = () => {
         "Statistics",
         "Machine Learning",
       ],
-      projects: [
-        "Sentiment Analysis of Arabic Social Media Posts",
-        "Predictive Modeling for Stock Market Analysis",
-        "Image Classification using Convolutional Neural Networks"
-      ]
-    },
-    {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "American University in Cairo",
-      period: "2013 - 2017",
-      location: "Cairo, Egypt",
-      gpa: "3.6/4.0",
-      description: "Strong foundation in computer science with focus on algorithms, data structures, and software engineering principles.",
-      coursework: [
-        "Data Structures & Algorithms",
-        "Database Systems",
-        "Software Engineering",
-        "Computer Networks",
-        "Operating Systems",
-        "Programming Languages",
-        "Discrete Mathematics",
-        "Statistics"
-      ],
-      projects: [
-        "Library Management System (Java)",
-        "E-commerce Web Application (PHP/MySQL)",
-        "Mobile App for Campus Navigation (Android)"
-      ]
+      // projects: [
+      //   "Sentiment Analysis of Arabic Social Media Posts",
+      //   "Predictive Modeling for Stock Market Analysis",
+      //   "Image Classification using Convolutional Neural Networks"
+      // ]
     }
   ];
 
