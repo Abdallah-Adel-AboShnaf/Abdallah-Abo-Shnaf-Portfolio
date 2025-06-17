@@ -38,7 +38,7 @@ const Home = () => {
                 </span>
               </h1>
 
-              <h2 className="text-3xl lg:text-4xl font-bold">
+              <h2 className="text-4xl md:text-5xl text-sky-700 font-bold mb-8 max-w-3xl mx-auto">
                 <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
                   <TypeAnimation
                     sequence={[
