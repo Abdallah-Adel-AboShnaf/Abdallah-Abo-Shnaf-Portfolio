@@ -5,21 +5,25 @@ import { Badge } from "@/components/ui/badge";
 const Education = () => {
   const education = [
     {
-      degree: "Master of Science in Data Science",
-      institution: "Cairo University",
-      period: "2017 - 2019",
+      degree: "Bachelor of CS and Information",
+      institution: "Helwan National University",
+      period: "2023 - 2027",
       location: "Cairo, Egypt",
-      gpa: "3.8/4.0",
-      description: "Specialized in machine learning, statistical modeling, and big data analytics. Completed thesis on 'Deep Learning Applications in Natural Language Processing'.",
+      gpa: "2.9/4.0",
+      description: "Comprehensive program covering statistical analysis, machine learning, data visualization, and big data technologies. Strong foundation in mathematics, programming, and research methodologies.",
       coursework: [
-        "Advanced Machine Learning",
-        "Statistical Learning Theory",
-        "Deep Learning",
-        "Natural Language Processing",
-        "Big Data Analytics",
-        "Data Mining",
-        "Bayesian Statistics",
-        "Computer Vision"
+        "Python",
+        "Hadoop and Apache Spark essentials",
+        "Neural Networks and Deep Learning",
+        "Data wrangling",
+        "Big Data",
+        "Data Structure and Algorithms",
+        "C Programming",
+        "Java Programming",
+        "Database",
+        "SQL Server",
+        "Statistics",
+        "Machine Learning",
       ],
       projects: [
         "Sentiment Analysis of Arabic Social Media Posts",
@@ -69,7 +73,7 @@ const Education = () => {
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-teal-500"></div>
-          
+
           <div className="space-y-12">
             {education.map((edu, index) => (
               <div key={index} className="relative flex items-start space-x-8">
