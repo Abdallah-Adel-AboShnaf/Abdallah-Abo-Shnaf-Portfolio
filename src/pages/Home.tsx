@@ -24,7 +24,7 @@ const Home = () => {
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold text-sky-800 mb-6">
                 Hi, I'm{' '}
-                 <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
                   <TypeAnimation
                     sequence={[
                       'Abdallah Adel',
@@ -38,7 +38,7 @@ const Home = () => {
                 </span>
               </h1>
 
-              <p className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+              <p className="text-4xl md:text-5xl bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-bold mb-8 max-w-3xl mx-auto">
                 <TypeAnimation
                   sequence={[
                     'Data Scientist',
