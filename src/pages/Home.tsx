@@ -24,21 +24,23 @@ const Home = () => {
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold text-sky-800 mb-6">
                 Hi, I'm{' '}
-                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                <span className="text-sky-600">
                   <TypeAnimation
                     sequence={[
                       'Abdallah Adel',
-                      1000, // pause for a second after typing
-                      '',   // remove text
-                      500,  // pause before typing again
+                      1000, 
+                      '', 
+                      500,
                     ]}
                     speed={70}
                     repeat={Infinity}
+                    cursor={true} 
+                    cursorSpeed={500} 
                   />
                 </span>
               </h1>
-
-              <p className="text-4xl md:text-5xl bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-bold mb-8 max-w-3xl mx-auto">
+              
+              <p className="text-4xl md:text-5xl text-sky-600 font-bold mb-8 max-w-3xl mx-auto">
                 <TypeAnimation
                   sequence={[
                     'Data Scientist',
@@ -50,6 +52,8 @@ const Home = () => {
                   ]}
                   speed={70}
                   repeat={Infinity}
+                  cursor={true}
+                  cursorSpeed={500} 
                 />
               </p>
 
