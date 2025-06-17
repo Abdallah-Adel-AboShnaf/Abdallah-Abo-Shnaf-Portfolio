@@ -26,9 +26,8 @@ const Education = () => {
         "Machine Learning",
       ],
       projects: [
-        "Sentiment Analysis of Arabic Social Media Posts",
-        "Predictive Modeling for Stock Market Analysis",
-        "Image Classification using Convolutional Neural Networks"
+        "Sales Forecasting and Optimization",
+        "Tic-Tac-Toe AI",
       ]
     }
   ];
