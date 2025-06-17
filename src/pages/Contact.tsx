@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Instagram } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -34,20 +34,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "abdallah@example.com",
-      link: "mailto:abdallah@example.com"
+      value: "abdallah.adel.abdallah10@gmail.com",
+      link: "mailto:abdallah.adel.abdallah10@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+20 123 456 7890",
-      link: "tel:+201234567890"
+      value: "+20 1154239632",
+      link: "tel:+201154239632"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Cairo, Egypt",
-      link: "https://maps.google.com/?q=Cairo,Egypt"
+      value: "Giza, Egypt",
+      link: "https://maps.app.goo.gl/9KkaCRU9FbuQCbMU9"
     }
   ];
 
@@ -55,25 +55,25 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/abdallah",
+      url: "http://www.linkedin.com/in/abdallah-adel-aboshnaf",
       color: "text-blue-600 hover:text-blue-700"
     },
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/abdallah",
+      url: "https://github.com/Abdallah-Adel-AboShnaf",
       color: "text-slate-700 hover:text-slate-900"
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      url: "https://twitter.com/abdallah",
+      icon: Instagram,
+      label: "Instagram",
+      url: "https://www.instagram.com/abdallah_adel_aboshnaf?igsh=ZDl1ODZ2bWx6bjBp",
       color: "text-sky-500 hover:text-sky-600"
     },
     {
       icon: Mail,
       label: "Email",
-      url: "mailto:abdallah@example.com",
+      url: "mailto:abdallah.adel.abdallah10@gmail.com",
       color: "text-red-500 hover:text-red-600"
     }
   ];
@@ -148,7 +148,7 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card className="p-8 bg-white/80 backdrop-blur-sm border-slate-200">
               <h2 className="text-2xl font-semibold text-slate-800 mb-6">Send Me a Message</h2>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -163,7 +163,7 @@ const Contact = () => {
                       className="border-slate-300 focus:border-blue-500"
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Address</Label>
                     <Input

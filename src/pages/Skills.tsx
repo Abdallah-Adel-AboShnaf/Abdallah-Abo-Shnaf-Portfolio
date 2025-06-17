@@ -55,7 +55,7 @@ const Skills = () => {
   ];
 
   const tools = [
-    "Jupyter Notebook", "Git", "GitHub","VS Code", "PyCharm", "MLOps", "MLflow"
+    "Jupyter Notebook", "Git", "GitHub","VS Code", "PyCharm", "MLOps", "MLflow", "SQL Server"
   ];
 
   return (
