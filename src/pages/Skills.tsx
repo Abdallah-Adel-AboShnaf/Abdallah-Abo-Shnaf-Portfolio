@@ -10,22 +10,22 @@ const Skills = () => {
       category: "Programming Languages",
       icon: Code,
       skills: [
-        { name: "Python", level: 95, color: "bg-blue-500" },
-        { name: "R", level: 85, color: "bg-teal-500" },
-        { name: "SQL", level: 90, color: "bg-purple-500" },
-        { name: "Java", level: 75, color: "bg-green-500" },
-        { name: "JavaScript", level: 70, color: "bg-yellow-500" }
+        { name: "Python", level: 90, color: "bg-blue-500" },
+        { name: "C & C++", level: 80, color: "bg-blue-500" },
+        { name: "SQL", level: 90, color: "bg-blue-500" },
+        { name: "Java", level: 70, color: "bg-blue-500" },
+        { name: "HTML", level: 70, color: "bg-blue-500" }
       ]
     },
     {
       category: "Machine Learning & AI",
       icon: Brain,
       skills: [
-        { name: "Scikit-learn", level: 95, color: "bg-blue-500" },
-        { name: "TensorFlow", level: 90, color: "bg-orange-500" },
-        { name: "PyTorch", level: 85, color: "bg-red-500" },
-        { name: "Keras", level: 88, color: "bg-pink-500" },
-        { name: "XGBoost", level: 92, color: "bg-green-500" }
+        { name: "Scikit-learn", level: 90, color: "bg-blue-500" },
+        { name: "TensorFlow", level: 90, color: "bg-blue-500" },
+        { name: "PyTorch", level: 80, color: "bg-blue-500" },
+        { name: "Keras", level: 60, color: "bg-blue-500" },
+        { name: "XGBoost", level: 85, color: "bg-blue-500" }
       ]
     },
     {
@@ -33,21 +33,17 @@ const Skills = () => {
       icon: Database,
       skills: [
         { name: "Pandas", level: 95, color: "bg-blue-500" },
-        { name: "NumPy", level: 93, color: "bg-teal-500" },
-        { name: "Matplotlib", level: 88, color: "bg-purple-500" },
-        { name: "Seaborn", level: 85, color: "bg-indigo-500" },
-        { name: "Plotly", level: 80, color: "bg-green-500" }
+        { name: "NumPy", level: 95, color: "bg-blue-500" },
+        { name: "Matplotlib", level: 90, color: "bg-blue-500" },
+        { name: "Seaborn", level: 85, color: "bg-blue-500" },
+        { name: "Plotly", level: 80, color: "bg-blue-500" }
       ]
     },
     {
       category: "Cloud & Big Data",
       icon: Cloud,
       skills: [
-        { name: "AWS", level: 85, color: "bg-orange-500" },
-        { name: "Google Cloud", level: 80, color: "bg-blue-500" },
-        { name: "Apache Spark", level: 75, color: "bg-red-500" },
-        { name: "Docker", level: 85, color: "bg-cyan-500" },
-        { name: "Kubernetes", level: 70, color: "bg-indigo-500" }
+        { name: "AWS", level: 30, color: "bg-blue-500" }
       ]
     }
   ];
@@ -55,12 +51,11 @@ const Skills = () => {
   const softSkills = [
     "Problem Solving", "Critical Thinking", "Communication", "Team Leadership",
     "Project Management", "Statistical Analysis", "Data Storytelling", "Research",
-    "Business Acumen", "Mentoring", "Agile Methodology", "Technical Writing"
+    "Agile Methodology", "Technical Writing"
   ];
 
   const tools = [
-    "Jupyter Notebook", "Git", "GitHub", "Tableau", "Power BI", "JIRA",
-    "Confluence", "VS Code", "PyCharm", "RStudio", "Databricks", "MLflow"
+    "Jupyter Notebook", "Git", "GitHub","VS Code", "PyCharm", "MLOps", "MLflow"
   ];
 
   return (
@@ -91,7 +86,7 @@ const Skills = () => {
                       {category.category}
                     </h2>
                   </div>
-                  
+
                   <div className="space-y-4">
                     {category.skills.map((skill, skillIndex) => (
                       <div key={skillIndex} className="space-y-2">
@@ -121,7 +116,7 @@ const Skills = () => {
               <h2 className="text-2xl font-semibold text-slate-800 mb-2">Soft Skills</h2>
               <p className="text-slate-600">Professional and interpersonal competencies</p>
             </div>
-            
+
             <div className="flex flex-wrap gap-3 justify-center">
               {softSkills.map((skill, index) => (
                 <Badge
@@ -143,7 +138,7 @@ const Skills = () => {
               <h2 className="text-2xl font-semibold text-slate-800 mb-2">Tools & Technologies</h2>
               <p className="text-slate-600">Development and productivity tools I work with</p>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {tools.map((tool, index) => (
                 <div
