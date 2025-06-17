@@ -49,20 +49,15 @@ const About = () => {
               <div className="prose prose-slate max-w-none space-y-4 text-slate-600">
                 <ul className="list-disc pl-6 text-sky-700 leading-relaxed space-y-4"></ul>
                   <li>
-                    A passionate Data Scientist with a strong foundation in data analysis, 
-                    machine learning, and statistical modeling.
-                    I am currently pursuing a degree in Data Science and 
-                    have been awarded competitive scholarships from both DEPI and ALX Africa.
+                    A passionate Data Scientist with a strong foundation in data analysis, machine learning, and statistical modeling. I am currently pursuing a degree in Data Science and have been awarded competitive scholarships from both DEPI and ALX Africa.
                   </li>
                   
                   <li>
-                    My technical skill set includes Python, C, C++, SQL Server, and MySQL. 
-                    I am committed to delivering data-driven solutions with a focus on both precision and efficiency.
+                    My technical skill set includes Python, C, C++, SQL Server, and MySQL. I am committed to delivering data-driven solutions with a focus on both precision and efficiency.
                   </li>
                   
                   <li>
-                    Driven by curiosity and a dedication to solving real-world problems, 
-                    I aim to make meaningful contributions in the world of Data Science.
+                    Driven by curiosity and a dedication to solving real-world problems, I aim to make meaningful contributions in the world of Data Science.
                   </li>
               </div>
             </Card>
