@@ -5,42 +5,30 @@ import { Badge } from "@/components/ui/badge";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Data Scientist",
-      company: "TechCorp Solutions",
-      period: "2022 - Present",
-      location: "Cairo, Egypt",
-      description: "Leading machine learning initiatives and building predictive models for enterprise clients. Developed recommendation systems that increased user engagement by 40%.",
-      technologies: ["Python", "TensorFlow", "PyTorch", "AWS", "Docker", "Kubernetes"],
+      title: "Data Scientist",
+      company: "ALX Africa",
+      period: "May 2025 - Present",
+      location: "Remote",
+      description: "Wrote Python code for data analysis and machine learning at ALX Africa. Worked with teammates on real projects to improve my skills. Connected with tech professionals across Africa to learn and grow.",
+      technologies: ["Python", "Preparing Data", "SQL", "Data Analysis", "Data Visualization", "ML" ,"Regression","NLP","AWS Foundations"],
       achievements: [
-        "Built and deployed 15+ ML models in production",
-        "Led a team of 5 data scientists",
-        "Reduced model inference time by 60% through optimization"
+        "Professional Foundations learn leadership and professional skills for workplace success",
+        "Machine Learning understand algorithms to build predictive, data-driven models.",
+        "AWS Cloud Practitioner gain basic AWS and cloud computing knowledge for a career start."
       ]
     },
     {
       title: "Data Scientist",
-      company: "DataInsights Inc.",
-      period: "2020 - 2022",
+      company: "Digital Egypt Pioneers Initiative - DEPI",
+      period: "Oct 2024 - May 2025",
       location: "Cairo, Egypt",
-      description: "Developed end-to-end data science solutions for various industries including finance, healthcare, and retail. Specialized in NLP and computer vision projects.",
-      technologies: ["Python", "Scikit-learn", "Pandas", "SQL", "Tableau", "Apache Spark"],
+      description: "The DEPI scholarship is a program from Egypt’s Ministry of Communications that helps students and graduates get ready for tech jobs, especially in areas like Data Science.",
+      technologies: ["Python", "Data Analysis", "SQL", "Data Visualization", "Machine Learning" , "MLOps", "Web Scraping", "Deployment"],
       achievements: [
-        "Implemented fraud detection system saving $2M annually",
-        "Created automated reporting dashboards for 20+ clients",
-        "Published 3 research papers in ML conferences"
-      ]
-    },
-    {
-      title: "Junior Data Analyst",
-      company: "Analytics Pro",
-      period: "2019 - 2020",
-      location: "Cairo, Egypt",
-      description: "Started my data science journey by performing statistical analysis and creating data visualizations. Worked closely with business stakeholders to understand requirements.",
-      technologies: ["Python", "R", "SQL", "Excel", "Power BI", "SPSS"],
-      achievements: [
-        "Automated monthly reporting processes",
-        "Conducted A/B tests for marketing campaigns",
-        "Improved data quality by implementing validation rules"
+        "Python proficiency in Python programming.",
+        "SQL ability to work with SQL databases.",
+        "DataAnalysis skills in analyzing and interpreting data.",
+        "MachineLearning expertise in building machine learning models."
       ]
     }
   ];
