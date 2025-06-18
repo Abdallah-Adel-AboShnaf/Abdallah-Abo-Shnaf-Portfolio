@@ -40,7 +40,7 @@ const Home = () => {
                 </span>
               </h1>
 
-              <p className="text-4xl md:text-5xl bg-gradient-to-br from-blue-600 to-teal-600 bg-clip-text text-transparent font-bold mb-8 max-w-3xl mx-auto">
+              <p className="text-4xl md:text-5xl text-sky-600 font-bold mb-8 max-w-3xl mx-auto">
                 <TypeAnimation
                   sequence={[
                     'Data Scientist',
