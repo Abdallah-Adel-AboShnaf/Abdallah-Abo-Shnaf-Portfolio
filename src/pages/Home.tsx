@@ -24,7 +24,7 @@ const Home = () => {
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold text-sky-800 mb-6">
                 Hi, I'm{' '}
-                <span className="bg-gradient-to-br from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                <span className="text-sky-600">
                   <TypeAnimation
                     sequence={[
                       'Abdallah Adel',
