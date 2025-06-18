@@ -1,23 +1,29 @@
 
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Home, User, Briefcase, Book, Award, Contact } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
 
   const navigation = [
-    { name: "Home", href: "/", icon: Home },
-    { name: "About", href: "/about", icon: User },
-    { name: "Experience", href: "/experience", icon: Briefcase },
-    { name: "Education", href: "/education", icon: Book },
-    { name: "Skills", href: "/skills", icon: Award },
-    { name: "Projects", href: "/projects", icon: Briefcase },
-    { name: "Certifications", href: "/certifications", icon: Award },
-    { name: "Contact", href: "/contact", icon: Contact },
+    { name: "Home", href: "#home", icon: Home },
+    { name: "About", href: "#about", icon: User },
+    { name: "Experience", href: "#experience", icon: Briefcase },
+    { name: "Education", href: "#education", icon: Book },
+    { name: "Skills", href: "#skills", icon: Award },
+    { name: "Projects", href: "#projects", icon: Briefcase },
+    { name: "Certifications", href: "#certifications", icon: Award },
+    { name: "Contact", href: "#contact", icon: Contact },
   ];
+
+  const handleNavClick = (href: string) => {
+    setIsOpen(false);
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -36,21 +42,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className="hidden md:flex space-x-1">
               {navigation.map((item) => {
                 const Icon = item.icon;
-                const isActive = location.pathname === item.href;
                 
                 return (
-                  <Link
+                  <button
                     key={item.name}
-                    to={item.href}
-                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
-                      isActive
-                        ? "bg-gradient-to-r from-blue-500 to-teal-500 text-white shadow-md"
-                        : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                    }`}
+                    onClick={() => handleNavClick(item.href)}
+                    className="flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                   >
                     <Icon className="h-4 w-4" />
                     <span className="font-medium">{item.name}</span>
-                  </Link>
+                  </button>
                 );
               })}
             </div>
@@ -77,22 +78,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className="px-4 py-2 space-y-1">
               {navigation.map((item) => {
                 const Icon = item.icon;
-                const isActive = location.pathname === item.href;
                 
                 return (
-                  <Link
+                  <button
                     key={item.name}
-                    to={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 ${
-                      isActive
-                        ? "bg-gradient-to-r from-blue-500 to-teal-500 text-white shadow-md"
-                        : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                    }`}
+                    onClick={() => handleNavClick(item.href)}
+                    className="w-full flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                   >
                     <Icon className="h-5 w-5" />
                     <span className="font-medium">{item.name}</span>
-                  </Link>
+                  </button>
                 );
               })}
             </div>

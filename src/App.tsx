@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -23,17 +23,32 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/certifications" element={<Certifications />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
+          <div className="scroll-smooth">
+            <section id="home">
+              <Home />
+            </section>
+            <section id="about">
+              <About />
+            </section>
+            <section id="experience">
+              <Experience />
+            </section>
+            <section id="education">
+              <Education />
+            </section>
+            <section id="skills">
+              <Skills />
+            </section>
+            <section id="projects">
+              <Projects />
+            </section>
+            <section id="certifications">
+              <Certifications />
+            </section>
+            <section id="contact">
+              <Contact />
+            </section>
+          </div>
         </Layout>
       </BrowserRouter>
     </TooltipProvider>
