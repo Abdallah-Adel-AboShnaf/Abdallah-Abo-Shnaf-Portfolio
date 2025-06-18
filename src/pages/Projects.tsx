@@ -10,40 +10,28 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-commerce Recommendation System",
-      category: "Machine Learning",
-      description: "Built a comprehensive recommendation engine using collaborative filtering and deep learning techniques. Implemented both content-based and collaborative filtering approaches to provide personalized product recommendations.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
-      technologies: ["Python", "TensorFlow", "Apache Spark", "Redis", "PostgreSQL", "Docker"],
-      features: [
-        "Real-time recommendations",
-        "A/B testing framework",
-        "40% increase in user engagement",
-        "Scalable architecture handling 1M+ users"
-      ],
+      title: "Sales Forecasting and Optimization",
+      category: "Data Science",
+      description: "The \"'Sales Forecasting and Optimization\"' project aims to predict future sales using historical data, in order to improve inventory and marketing decisions. Predictive models were developed using data analysis and machine learning techniques, and deployed through an interactive application to help companies make data-driven decisions.",
+      image: "https://images.unsplash.com/vector-1738926529294-16956cea63a7?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      technologies: ["Python", "Data Analysis", "Data Visualization", "Machine Learning", "Streamlit", "MLflow"],
+
       links: {
-        github: "#",
-        demo: "#"
-      },
-      status: "Production"
+        github: "https://github.com/DataScTeam/DataScienceFinalproject",
+        demo: "https://final-project-depi-data-science.streamlit.app/"
+      }
     },
     {
-      title: "Financial Fraud Detection",
-      category: "Deep Learning",
-      description: "Developed an advanced fraud detection system using ensemble methods and neural networks. The system processes millions of transactions daily and identifies fraudulent activities with high precision.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-      technologies: ["Python", "PyTorch", "XGBoost", "Apache Kafka", "MongoDB", "AWS"],
-      features: [
-        "99.2% accuracy rate",
-        "Real-time transaction scoring",
-        "Reduced false positives by 60%",
-        "Saved $2M annually"
-      ],
+      title: "Tic-Tac-Toe AI",
+      category: "AI",
+      description: "A Python-based Tic-Tac-Toe game featuring an AI opponent with multiple algorithms and heuristics.",
+      image: "https://i.pinimg.com/736x/ea/96/13/ea961398964cff599864d5a97738999d.jpg",
+      technologies: ["Python", "Algorithm Heuristic", "Alpha-Beta Pruning"],
+
       links: {
-        github: "#",
-        demo: "#"
-      },
-      status: "Production"
+        github: "https://github.com/Abdallah-Adel-AboShnaf/Project-Tic-Tac-Toe",
+        demo: "https://github.com/Abdallah-Adel-AboShnaf/Project-Tic-Tac-Toe"
+      }
     },
     {
       title: "Medical Image Analysis",
@@ -51,17 +39,11 @@ const Projects = () => {
       description: "Created a deep learning model for automated medical image analysis, specifically for detecting abnormalities in chest X-rays. The model assists radiologists in making faster and more accurate diagnoses.",
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
       technologies: ["Python", "TensorFlow", "OpenCV", "Flask", "PostgreSQL", "Docker"],
-      features: [
-        "95% diagnostic accuracy",
-        "DICOM format support",
-        "Integration with hospital systems",
-        "FDA compliance considerations"
-      ],
+
       links: {
         github: "#",
         demo: "#"
-      },
-      status: "Research"
+      }
     },
     {
       title: "Natural Language Processing Chatbot",
@@ -69,17 +51,11 @@ const Projects = () => {
       description: "Built an intelligent customer service chatbot using transformer models and natural language understanding. The bot handles complex queries and provides contextual responses in multiple languages.",
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=300&fit=crop",
       technologies: ["Python", "Transformers", "BERT", "FastAPI", "React", "MongoDB"],
-      features: [
-        "Multi-language support",
-        "Context-aware responses",
-        "85% query resolution rate",
-        "Integration with CRM systems"
-      ],
+
       links: {
         github: "#",
         demo: "#"
-      },
-      status: "Production"
+      }
     },
     {
       title: "Supply Chain Optimization",
@@ -87,17 +63,11 @@ const Projects = () => {
       description: "Developed an optimization system for supply chain management using linear programming and machine learning. The system optimizes inventory levels, reduces costs, and improves delivery times.",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
       technologies: ["Python", "OR-Tools", "Pandas", "Plotly", "PostgreSQL", "Streamlit"],
-      features: [
-        "30% cost reduction",
-        "Improved delivery times",
-        "Real-time optimization",
-        "Interactive dashboards"
-      ],
+
       links: {
         github: "#",
         demo: "#"
-      },
-      status: "Production"
+      }
     },
     {
       title: "Predictive Maintenance System",
@@ -105,24 +75,18 @@ const Projects = () => {
       description: "Created a predictive maintenance solution for industrial equipment using sensor data and machine learning. The system predicts equipment failures before they occur, reducing downtime significantly.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
       technologies: ["Python", "Scikit-learn", "InfluxDB", "Grafana", "Apache Kafka", "Docker"],
-      features: [
-        "70% reduction in downtime",
-        "IoT sensor integration",
-        "Real-time monitoring",
-        "Predictive alerts system"
-      ],
+
       links: {
         github: "#",
         demo: "#"
-      },
-      status: "Production"
+      }
     }
   ];
 
-  const categories = ["All", "Machine Learning", "Deep Learning", "Computer Vision", "NLP", "Operations Research", "IoT & Analytics"];
+  const categories = ["All", "Machine Learning", "Data Science", "AI", "Java"];
 
-  const filteredProjects = selectedCategory === "All" 
-    ? projects 
+  const filteredProjects = selectedCategory === "All"
+    ? projects
     : projects.filter(project => project.category === selectedCategory);
 
   return (
@@ -145,8 +109,8 @@ const Projects = () => {
               key={category}
               variant={selectedCategory === category ? "default" : "secondary"}
               className={`px-4 py-2 cursor-pointer transition-colors ${
-                selectedCategory === category 
-                  ? "bg-gradient-to-r from-blue-600 to-teal-600 text-white" 
+                selectedCategory === category
+                  ? "bg-gradient-to-r from-blue-600 to-teal-600 text-white"
                   : "hover:bg-blue-100 hover:text-blue-800"
               }`}
               onClick={() => setSelectedCategory(category)}
@@ -201,18 +165,6 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Key Features */}
-                <div>
-                  <h4 className="font-medium text-slate-700 mb-2">Key Features</h4>
-                  <ul className="grid grid-cols-1 gap-1">
-                    {project.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start space-x-2 text-sm">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
-                        <span className="text-slate-600">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
 
                 {/* Action Buttons */}
                 <div className="flex space-x-3 pt-4">
