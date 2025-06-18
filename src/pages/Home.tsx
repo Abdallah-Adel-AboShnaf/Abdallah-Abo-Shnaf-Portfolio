@@ -28,18 +28,18 @@ const Home = () => {
                   <TypeAnimation
                     sequence={[
                       'Abdallah Adel',
-                      1000, 
-                      '', 
+                      1000,
+                      '',
                       500,
                     ]}
                     speed={70}
                     repeat={Infinity}
-                    cursor={true} 
-                    cursorSpeed={500} 
+                    cursor={true}
+                    cursorSpeed={500}
                   />
                 </span>
               </h1>
-              
+
               <p className="text-4xl md:text-5xl text-sky-600 font-bold mb-8 max-w-3xl mx-auto">
                 <TypeAnimation
                   sequence={[
@@ -47,13 +47,13 @@ const Home = () => {
                     1500,
                     'Data Analyst',
                     1500,
-                    'Machine Learning Engineer',
+                    'Machine Learning Expert',
                     1500,
                   ]}
                   speed={70}
                   repeat={Infinity}
                   cursor={true}
-                  cursorSpeed={500} 
+                  cursorSpeed={500}
                 />
               </p>
 
