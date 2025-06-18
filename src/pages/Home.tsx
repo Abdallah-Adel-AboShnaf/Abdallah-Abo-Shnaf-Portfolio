@@ -40,7 +40,7 @@ const Home = () => {
                 </span>
               </h1>
 
-              <p className="bg-gradient-to-br from-blue-600 to-teal-600 bg-clip-text text-transparent">
+              <p className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
                 <TypeAnimation
                   sequence={[
                     'Data Scientist',
