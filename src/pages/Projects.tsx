@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -15,7 +14,6 @@ const Projects = () => {
       description: "The \"'Sales Forecasting and Optimization\"' project aims to predict future sales using historical data, in order to improve inventory and marketing decisions. Predictive models were developed using data analysis and machine learning techniques, and deployed through an interactive application to help companies make data-driven decisions.",
       image: "https://images.unsplash.com/vector-1738926529294-16956cea63a7?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["Python", "Data Analysis", "Data Visualization", "Machine Learning", "Streamlit", "MLflow"],
-
       links: {
         github: "https://github.com/DataScTeam/DataScienceFinalproject",
         demo: "https://final-project-depi-data-science.streamlit.app/"
@@ -27,58 +25,9 @@ const Projects = () => {
       description: "A Python-based Tic-Tac-Toe game featuring an AI opponent with multiple algorithms and heuristics.",
       image: "https://i.pinimg.com/736x/ea/96/13/ea961398964cff599864d5a97738999d.jpg",
       technologies: ["Python", "Algorithm Heuristic", "Alpha-Beta Pruning"],
-
       links: {
         github: "https://github.com/Abdallah-Adel-AboShnaf/Project-Tic-Tac-Toe",
         demo: "https://github.com/Abdallah-Adel-AboShnaf/Project-Tic-Tac-Toe"
-      }
-    },
-    {
-      title: "Medical Image Analysis",
-      category: "Computer Vision",
-      description: "Created a deep learning model for automated medical image analysis, specifically for detecting abnormalities in chest X-rays. The model assists radiologists in making faster and more accurate diagnoses.",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
-      technologies: ["Python", "TensorFlow", "OpenCV", "Flask", "PostgreSQL", "Docker"],
-
-      links: {
-        github: "#",
-        demo: "#"
-      }
-    },
-    {
-      title: "Natural Language Processing Chatbot",
-      category: "NLP",
-      description: "Built an intelligent customer service chatbot using transformer models and natural language understanding. The bot handles complex queries and provides contextual responses in multiple languages.",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=300&fit=crop",
-      technologies: ["Python", "Transformers", "BERT", "FastAPI", "React", "MongoDB"],
-
-      links: {
-        github: "#",
-        demo: "#"
-      }
-    },
-    {
-      title: "Supply Chain Optimization",
-      category: "Operations Research",
-      description: "Developed an optimization system for supply chain management using linear programming and machine learning. The system optimizes inventory levels, reduces costs, and improves delivery times.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
-      technologies: ["Python", "OR-Tools", "Pandas", "Plotly", "PostgreSQL", "Streamlit"],
-
-      links: {
-        github: "#",
-        demo: "#"
-      }
-    },
-    {
-      title: "Predictive Maintenance System",
-      category: "IoT & Analytics",
-      description: "Created a predictive maintenance solution for industrial equipment using sensor data and machine learning. The system predicts equipment failures before they occur, reducing downtime significantly.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
-      technologies: ["Python", "Scikit-learn", "InfluxDB", "Grafana", "Apache Kafka", "Docker"],
-
-      links: {
-        github: "#",
-        demo: "#"
       }
     }
   ];
@@ -165,17 +114,33 @@ const Projects = () => {
                   </div>
                 </div>
 
-
                 {/* Action Buttons */}
                 <div className="flex space-x-3 pt-4">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Button>
-                  <Button size="sm" className="flex-1 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
-                  </Button>
+                  {/* GitHub Link */}
+                  {project.links.github && (
+                    <a
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center px-4 py-2 border border-slate-300 rounded-md shadow-sm text-slate-700 bg-white hover:bg-slate-50 transition-colors"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </a>
+                  )}
+
+                  {/* Demo Link */}
+                  {project.links.demo && (
+                    <a
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-white bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 transition-colors"
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </Card>
