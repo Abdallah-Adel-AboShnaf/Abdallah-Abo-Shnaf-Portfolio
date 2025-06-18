@@ -15,7 +15,8 @@ const Experience = () => {
         "Machine Learning understand algorithms to build predictive, data-driven models.",
         "AWS Cloud Practitioner gain basic AWS and cloud computing knowledge for a career start."
       ],
-      category: "Work"
+      category: "Internship"
+      // category: "Work" or "Internship"
     },
     {
       title: "Data Scientist",
@@ -74,7 +75,7 @@ const Experience = () => {
                             <Badge variant="outline" className="w-fit text-blue-600 border-blue-200">
                               {exp.period}
                             </Badge>
-                            <Badge variant="secondary" className={`w-fit ${exp.category === "Work" ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"}`}>
+                            <Badge variant="secondary" className={`w-fit ${exp.category === "Work" ? "bg-green-100 text-green-700" : "bg-blue-100 text-blue-700"}`}>
                               {exp.category}
                             </Badge>
                           </div>
