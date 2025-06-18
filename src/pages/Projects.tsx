@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -83,14 +84,6 @@ const Projects = () => {
                 <div className="absolute top-4 left-4">
                   <Badge variant="secondary" className="bg-white/90 text-slate-700">
                     {project.category}
-                  </Badge>
-                </div>
-                <div className="absolute top-4 right-4">
-                  <Badge
-                    variant={project.status === "Production" ? "default" : "secondary"}
-                    className={project.status === "Production" ? "bg-green-600" : "bg-orange-500"}
-                  >
-                    {project.status}
                   </Badge>
                 </div>
               </div>

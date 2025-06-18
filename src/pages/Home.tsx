@@ -42,7 +42,6 @@ const Home = () => {
                     speed={70}
                     repeat={Infinity}
                     cursor={true}
-                    cursorSpeed={500}
                   />
                 </span>
               </h1>
@@ -60,7 +59,6 @@ const Home = () => {
                   speed={70}
                   repeat={Infinity}
                   cursor={true}
-                  cursorSpeed={500}
                 />
               </p>
 
