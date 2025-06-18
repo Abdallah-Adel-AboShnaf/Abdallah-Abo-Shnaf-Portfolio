@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -10,12 +9,13 @@ const Experience = () => {
       period: "May 2025 - Present",
       location: "Remote",
       description: "Wrote Python code for data analysis and machine learning at ALX Africa. Worked with teammates on real projects to improve my skills. Connected with tech professionals across Africa to learn and grow.",
-      technologies: ["Python", "Preparing Data", "SQL", "Data Analysis", "Data Visualization", "ML" ,"Regression","NLP","AWS Foundations"],
+      technologies: ["Python", "Preparing Data", "SQL", "Data Analysis", "Data Visualization", "ML", "Regression", "NLP", "AWS Foundations"],
       achievements: [
         "Professional Foundations learn leadership and professional skills for workplace success",
         "Machine Learning understand algorithms to build predictive, data-driven models.",
         "AWS Cloud Practitioner gain basic AWS and cloud computing knowledge for a career start."
-      ]
+      ],
+      category: "Work"
     },
     {
       title: "Data Scientist",
@@ -23,13 +23,14 @@ const Experience = () => {
       period: "Oct 2024 - May 2025",
       location: "Cairo, Egypt",
       description: "The DEPI scholarship is a program from Egypt’s Ministry of Communications that helps students and graduates get ready for tech jobs, especially in areas like Data Science.",
-      technologies: ["Python", "Data Analysis", "SQL", "Data Visualization", "Machine Learning" , "MLOps", "Web Scraping", "Deployment"],
+      technologies: ["Python", "Data Analysis", "SQL", "Data Visualization", "Machine Learning", "MLOps", "Web Scraping", "Deployment"],
       achievements: [
         "Python proficiency in Python programming.",
         "SQL ability to work with SQL databases.",
         "DataAnalysis skills in analyzing and interpreting data.",
         "MachineLearning expertise in building machine learning models."
-      ]
+      ],
+      category: "Internship"
     }
   ];
 
@@ -50,7 +51,7 @@ const Experience = () => {
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-teal-500"></div>
-          
+
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div key={index} className="relative flex items-start space-x-8">
@@ -69,9 +70,14 @@ const Experience = () => {
                       <div>
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                           <h3 className="text-2xl font-semibold text-slate-800">{exp.title}</h3>
-                          <Badge variant="outline" className="w-fit text-blue-600 border-blue-200">
-                            {exp.period}
-                          </Badge>
+                          <div className="flex space-x-2">
+                            <Badge variant="outline" className="w-fit text-blue-600 border-blue-200">
+                              {exp.period}
+                            </Badge>
+                            <Badge variant="secondary" className={`w-fit ${exp.category === "Work" ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"}`}>
+                              {exp.category}
+                            </Badge>
+                          </div>
                         </div>
                         <p className="text-lg text-blue-600 font-medium">{exp.company}</p>
                         <p className="text-slate-500">{exp.location}</p>
