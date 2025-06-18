@@ -29,17 +29,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Horizontal Navigation Bar */}
       <div className="bg-white/95 backdrop-blur-sm shadow-lg border-b border-slate-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+          <div className="flex justify-between items-center h-14 sm:h-16">
             {/* Logo/Brand */}
             <div className="flex items-center">
-              <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+              <h1 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
                 Portfolio
               </h1>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-1">
+            <div className="hidden lg:flex space-x-1">
               {navigation.map((item) => {
                 const Icon = item.icon;
                 
@@ -47,7 +47,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                    className="flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900 text-sm"
                   >
                     <Icon className="h-4 w-4" />
                     <span className="font-medium">{item.name}</span>
@@ -57,14 +57,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <Button
                 variant="outline"
                 size="icon"
                 onClick={() => setIsOpen(!isOpen)}
-                className="bg-white/90 backdrop-blur-sm border-slate-200 hover:bg-white"
+                className="bg-white/90 backdrop-blur-sm border-slate-200 hover:bg-white h-10 w-10"
               >
-                {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
               </Button>
             </div>
           </div>
@@ -73,9 +73,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden fixed inset-0 z-40 bg-black/20" onClick={() => setIsOpen(false)}>
-          <div className="fixed top-16 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg border-b border-slate-200">
-            <div className="px-4 py-2 space-y-1">
+        <div className="lg:hidden fixed inset-0 z-40 bg-black/20" onClick={() => setIsOpen(false)}>
+          <div className="fixed top-14 sm:top-16 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg border-b border-slate-200 max-h-[calc(100vh-3.5rem)] sm:max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div className="px-3 py-2 space-y-1">
               {navigation.map((item) => {
                 const Icon = item.icon;
                 
@@ -83,9 +83,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="w-full flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                    className="w-full flex items-center space-x-3 px-3 py-3 rounded-lg transition-all duration-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900 text-sm"
                   >
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-4 w-4" />
                     <span className="font-medium">{item.name}</span>
                   </button>
                 );
