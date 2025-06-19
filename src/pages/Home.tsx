@@ -4,9 +4,6 @@ import { Card } from "@/components/ui/card";
 // import { ArrowRight, Download, Mail, Linkedin, Github, FaGraduationCap, FaDatabase, FaUniversity, FaCertificate, FaAward, FaCode, FaRocket } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
-import { MdEmail } from 'react-icons/md'; // For Mail
-import { BsLinkedin } from 'react-icons/bs'; // For Linkedin
-import { FaGithub } from 'react-icons/fa'; // For Github
 import { FaGraduationCap } from 'react-icons/fa'; // For DataCamp
 import { FaDatabase } from 'react-icons/fa'; // For Kaggle
 import { FaUniversity } from 'react-icons/fa'; // For Maven
@@ -15,7 +12,7 @@ import { FaAward } from 'react-icons/fa'; // For Credly
 import { FaCode } from 'react-icons/fa'; // For HackerRank
 import { FaRocket } from 'react-icons/fa'; // For Codeforces
 
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, Mail, Linkedin, Github } from "lucide-react";
 
 const Home = () => {
   const handleLearnMore = () => {
@@ -132,17 +129,17 @@ const Home = () => {
             {/* Social Media Icons */}
             <a href="mailto:aboshnaf.me@gmail.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <MdEmail className="h-6 w-6" />
+                <Mail className="h-6 w-6" />
               </Button>
             </a>
             <a href="https://www.linkedin.com/in/abdallah-adel-aboshnaf/"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <BsLinkedin className="h-6 w-6" />
+                <Linkedin className="h-6 w-6" />
               </Button>
             </a>
             <a href="https://github.com/Abdallah-Adel-AboShnaf"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <FaGithub className="h-6 w-6" />
+                <Github className="h-6 w-6" />
               </Button>
             </a>
 
