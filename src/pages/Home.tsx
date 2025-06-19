@@ -1,18 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-// import { ArrowRight, Download, Mail, Linkedin, Github, FaGraduationCap, FaDatabase, FaUniversity, FaCertificate, FaAward, FaCode, FaRocket } from "lucide-react";
+import { ArrowRight, Download, Mail, Linkedin, Github} from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
-import { FaGraduationCap } from 'react-icons/fa'; // For DataCamp
-import { FaDatabase } from 'react-icons/fa'; // For Kaggle
-import { FaUniversity } from 'react-icons/fa'; // For Maven
-import { FaCertificate } from 'react-icons/fa'; // For Coursera
-import { FaAward } from 'react-icons/fa'; // For Credly
-import { FaCode } from 'react-icons/fa'; // For HackerRank
-import { FaRocket } from 'react-icons/fa'; // For Codeforces
+import { SiDatacamp, SiKaggle, SiMavenanalytics, SiCoursera, SiCredly, SiHackerrank, SiCodeforces } from 'react-icons/si';
 
-import { ArrowRight, Download, Mail, Linkedin, Github } from "lucide-react";
 
 const Home = () => {
   const handleLearnMore = () => {
@@ -144,45 +137,45 @@ const Home = () => {
             </a>
 
             {/* Platform Icons */}
-            <a href="https://www.datacamp.com"  target="_blank" rel="noopener noreferrer">
+            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <FaGraduationCap className="h-6 w-6" />
+                <SiDatacamp className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.kaggle.com"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <FaDatabase className="h-6 w-6" />
+                <SiKaggle className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.mavenanalytics.io"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <FaUniversity className="h-6 w-6" />
+                <SiMavenanalytics className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.coursera.org"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <FaCertificate className="h-6 w-6" />
+                <SiCoursera className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.credly.com"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <FaAward className="h-6 w-6" />
+                <SiCredly className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.hackerrank.com"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <FaCode className="h-6 w-6" />
+                <SiHackerrank className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://codeforces.com"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <FaRocket className="h-6 w-6" />
+                <SiCodeforces  className="h-6 w-6" />
               </Button>
             </a>
           </div>
