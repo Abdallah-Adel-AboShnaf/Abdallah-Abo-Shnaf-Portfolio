@@ -5,7 +5,7 @@ import { ArrowRight, Download, Mail, Linkedin, Github} from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 import { SiDatacamp } from 'react-icons/si';
-import { SiKaggle } from 'react-icons/si';
+import { FaKaggle } from "react-icons/fa6";
 import { SiCoursera } from 'react-icons/si';
 import { SiCredly } from 'react-icons/si';
 import { SiHackerrank } from 'react-icons/si';
@@ -149,7 +149,7 @@ const Home = () => {
             </a>
             <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-16 w-16 text-slate-600 hover:text-blue-600 flex items-center justify-center">
-                <SiKaggle className="h-16 w-16" />
+                <FaKaggle className="h-16 w-16" />
               </Button>
             </a>
             <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
