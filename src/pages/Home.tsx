@@ -63,7 +63,7 @@ const Home = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to="/about">
+            <Link to="/About">
               <Button size="lg" className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white">
                 Learn More About Me
                 <ArrowRight className="ml-2 h-4 w-4" />
