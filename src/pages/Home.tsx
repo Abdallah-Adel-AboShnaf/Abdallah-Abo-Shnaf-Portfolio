@@ -52,7 +52,7 @@ const Home = () => {
                   ]}
                   speed={70}
                   repeat={Infinity}
-                  cursor={true}
+                  cursor={false}
                   cursorSpeed={500}
                 />
               </p>
