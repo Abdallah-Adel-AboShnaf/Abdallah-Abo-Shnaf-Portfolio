@@ -70,8 +70,8 @@ const Home = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white"
               onClick={handleLearnMore}
             >
@@ -117,7 +117,7 @@ const Home = () => {
           {/* Social Links and Platform Links */}
           <div className="flex flex-wrap justify-center space-x-4 pt-8">
             {/* Social Media Icons */}
-            <a href="mailto:abdallah.adel.abdallah10@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:aboshnaf.me@gmail.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
                 <Mail className="h-6 w-6" />
               </Button>
@@ -135,13 +135,11 @@ const Home = () => {
 
             {/* Platform Icons */}
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">DC</span>
-                </div>
+            <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+                <DataCamp className="h-6 w-6" />
               </Button>
             </a>
-            
+
             <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
                 <div className="w-6 h-6 bg-cyan-500 rounded flex items-center justify-center">
@@ -149,7 +147,7 @@ const Home = () => {
                 </div>
               </Button>
             </a>
-            
+
             <a href="https://www.mavenanalytics.io" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
                 <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
@@ -157,7 +155,7 @@ const Home = () => {
                 </div>
               </Button>
             </a>
-            
+
             <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
                 <div className="w-6 h-6 bg-blue-700 rounded flex items-center justify-center">
@@ -165,7 +163,7 @@ const Home = () => {
                 </div>
               </Button>
             </a>
-            
+
             <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
                 <div className="w-6 h-6 bg-green-600 rounded flex items-center justify-center">
@@ -173,7 +171,7 @@ const Home = () => {
                 </div>
               </Button>
             </a>
-            
+
             <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
                 <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center">
@@ -181,7 +179,7 @@ const Home = () => {
                 </div>
               </Button>
             </a>
-            
+
             <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
                 <div className="w-6 h-6 bg-red-600 rounded flex items-center justify-center">
