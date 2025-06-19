@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Download, Mail, Linkedin, Github } from "lucide-react";
+import { ArrowRight, Download, Mail, Linkedin, Github, DataCamp, Maven, Coursera, Kaggle, Credly, HackerRank, Codeforces } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
@@ -135,56 +135,44 @@ const Home = () => {
 
             {/* Platform Icons */}
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-            <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
                 <DataCamp className="h-6 w-6" />
               </Button>
             </a>
 
             <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <div className="w-6 h-6 bg-cyan-500 rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">K</span>
-                </div>
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+                <Kaggle className="h-6 w-6" />
               </Button>
             </a>
 
             <a href="https://www.mavenanalytics.io" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">M</span>
-                </div>
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+                <Maven className="h-6 w-6" />
               </Button>
             </a>
 
             <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <div className="w-6 h-6 bg-blue-700 rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">C</span>
-                </div>
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+                <Coursera className="h-6 w-6" />
               </Button>
             </a>
 
             <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <div className="w-6 h-6 bg-green-600 rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">Cr</span>
-                </div>
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+                <Credly className="h-6 w-6" />
               </Button>
             </a>
 
             <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">HR</span>
-                </div>
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+                <HackerRank className="h-6 w-6" />
               </Button>
             </a>
 
             <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <div className="w-6 h-6 bg-red-600 rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">CF</span>
-                </div>
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+                <Codeforces className="h-6 w-6" />
               </Button>
             </a>
           </div>
