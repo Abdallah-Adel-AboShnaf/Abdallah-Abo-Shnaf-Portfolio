@@ -56,7 +56,7 @@ const Home = () => {
               </p>
 
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                I turn data into direction. With a focus on machine learning, analytics, and visualization, I build smart solutions that simplify complexity and deliver real-world impact.
+              Turning data into insights with machine learning, analytics, and visualizations, I deliver impactful solutions that simplify complexity.
               </p>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Home = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-slate-300 hover:bg-slate-50"
+              className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white"
               onClick={() => window.open("https://drive.google.com/file/d/1Z1M18WNf78iBTE9rpnbN1FqK9dtvBI23/view?usp=sharing",  "_blank")}
               >
               Download CV
