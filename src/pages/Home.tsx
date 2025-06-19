@@ -6,7 +6,6 @@ import { TypeAnimation } from "react-type-animation";
 
 import { SiDatacamp } from 'react-icons/si';
 import { SiKaggle } from 'react-icons/si';
-import { SiMavenanalytics } from 'react-icons/si';
 import { SiCoursera } from 'react-icons/si';
 import { SiCredly } from 'react-icons/si';
 import { SiHackerrank } from 'react-icons/si';
@@ -149,37 +148,31 @@ const Home = () => {
               </Button>
             </a>
 
-                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
                 <SiKaggle className="h-6 w-6" />
               </Button>
             </a>
 
-                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <SiMavenanalytics className="h-6 w-6" />
-              </Button>
-            </a>
-
-                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
                 <SiCoursera className="h-6 w-6" />
               </Button>
             </a>
 
-                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
                 <SiCredly className="h-6 w-6" />
               </Button>
             </a>
 
-                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
                 <SiHackerrank className="h-6 w-6" />
               </Button>
             </a>
 
-                        <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
                 <SiCodeforces  className="h-6 w-6" />
               </Button>
