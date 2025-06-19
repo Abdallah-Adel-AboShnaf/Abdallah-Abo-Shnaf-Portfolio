@@ -32,7 +32,7 @@ const Home = () => {
                       '',
                       500,
                     ]}
-                    speed={70}
+                    speed={90}
                     repeat={Infinity}
                     cursor={true}
                     cursorSpeed={500}
@@ -50,9 +50,9 @@ const Home = () => {
                     'Machine Learning Expert',
                     1500,
                   ]}
-                  speed={70}
+                  speed={90}
                   repeat={Infinity}
-                  cursor={false}
+                  cursor={true}
                   cursorSpeed={500}
                 />
               </p>
