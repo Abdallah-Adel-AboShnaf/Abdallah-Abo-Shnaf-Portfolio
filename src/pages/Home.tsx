@@ -1,8 +1,19 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Download, Mail, Linkedin, Github, DataCamp, Maven, Coursera, Kaggle, Credly, HackerRank, Codeforces } from "lucide-react";
+// import { ArrowRight, Download, Mail, Linkedin, Github, FaGraduationCap, FaDatabase, FaUniversity, FaCertificate, FaAward, FaCode, FaRocket } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
+
+import { MdEmail } from 'react-icons/md'; // For Mail
+import { BsLinkedin } from 'react-icons/bs'; // For Linkedin
+import { FaGithub } from 'react-icons/fa'; // For Github
+import { FaGraduationCap } from 'react-icons/fa'; // For DataCamp
+import { FaDatabase } from 'react-icons/fa'; // For Kaggle
+import { FaUniversity } from 'react-icons/fa'; // For Maven
+import { FaCertificate } from 'react-icons/fa'; // For Coursera
+import { FaAward } from 'react-icons/fa'; // For Credly
+import { FaCode } from 'react-icons/fa'; // For HackerRank
+import { FaRocket } from 'react-icons/fa'; // For Codeforces
 
 const Home = () => {
   const handleLearnMore = () => {
@@ -119,60 +130,60 @@ const Home = () => {
             {/* Social Media Icons */}
             <a href="mailto:aboshnaf.me@gmail.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <Mail className="h-6 w-6" />
+                <MdEmail className="h-6 w-6" />
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/abdallah-adel-aboshnaf/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/abdallah-adel-aboshnaf/"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <Linkedin className="h-6 w-6" />
+                <BsLinkedin className="h-6 w-6" />
               </Button>
             </a>
-            <a href="https://github.com/Abdallah-Adel-AboShnaf" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Abdallah-Adel-AboShnaf"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <Github className="h-6 w-6" />
+                <FaGithub className="h-6 w-6" />
               </Button>
             </a>
 
             {/* Platform Icons */}
-            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.datacamp.com"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <DataCamp className="h-6 w-6" />
+                <FaGraduationCap className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.kaggle.com"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <Kaggle className="h-6 w-6" />
+                <FaDatabase className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.mavenanalytics.io" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.mavenanalytics.io"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <Maven className="h-6 w-6" />
+                <FaUniversity className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.coursera.org"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <Coursera className="h-6 w-6" />
+                <FaCertificate className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.credly.com"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <Credly className="h-6 w-6" />
+                <FaAward className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.hackerrank.com"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <HackerRank className="h-6 w-6" />
+                <FaCode className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://codeforces.com"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <Codeforces className="h-6 w-6" />
+                <FaRocket className="h-6 w-6" />
               </Button>
             </a>
           </div>
