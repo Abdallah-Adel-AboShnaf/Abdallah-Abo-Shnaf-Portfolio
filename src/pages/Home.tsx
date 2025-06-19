@@ -123,58 +123,53 @@ const Home = () => {
           </div>
 
           {/* Social Links and Platform Links */}
-          <div className="flex flex-wrap justify-center space-x-4 pt-8">
+          <div className="flex flex-wrap justify-center gap-4 pt-8">
             {/* Social Media Icons */}
             <a href="mailto:aboshnaf.me@gmail.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-blue-600">
-                <Mail className="h-40 w-40" />
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-blue-600 flex items-center justify-center">
+                <Mail className="h-16 w-16" />
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/abdallah-adel-aboshnaf/"  target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-blue-600">
-                <Linkedin className="h-40 w-40" />
+            <a href="https://www.linkedin.com/in/abdallah-adel-aboshnaf/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-blue-600 flex items-center justify-center">
+                <Linkedin className="h-16 w-16" />
               </Button>
             </a>
-            <a href="https://github.com/Abdallah-Adel-AboShnaf"  target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-slate-900">
-                <Github className="h-40 w-40" />
+            <a href="https://github.com/Abdallah-Adel-AboShnaf" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-slate-900 flex items-center justify-center">
+                <Github className="h-16 w-16" />
               </Button>
             </a>
 
             {/* Platform Icons */}
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-green-600">
-                <SiDatacamp className="h-40 w-40" />
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-green-600 flex items-center justify-center">
+                <SiDatacamp className="h-16 w-16" />
               </Button>
             </a>
-
-            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-blue-600">
-                <SiKaggle className="h-40 w-40" />
+            <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-blue-600 flex items-center justify-center">
+                <SiKaggle className="h-16 w-16" />
               </Button>
             </a>
-
-            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-blue-600">
-                <SiCoursera className="h-40 w-40" />
+            <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-blue-600 flex items-center justify-center">
+                <SiCoursera className="h-16 w-16" />
               </Button>
             </a>
-
-            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-slate-900">
-                <SiCredly className="h-40 w-40" />
+            <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-slate-900 flex items-center justify-center">
+                <SiCredly className="h-16 w-16" />
               </Button>
             </a>
-
-            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-black-900">
-                <SiHackerrank className="h-40 w-40" />
+            <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-black flex items-center justify-center">
+                <SiHackerrank className="h-16 w-16" />
               </Button>
             </a>
-
-            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" className="h-20 w-20 text-slate-600 hover:text-slate-900">
-                <SiCodeforces  className="h-40 w-40" />
+            <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-slate-900 flex items-center justify-center">
+                <SiCodeforces className="h-16 w-16" />
               </Button>
             </a>
           </div>
