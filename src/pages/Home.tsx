@@ -4,7 +4,13 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, Download, Mail, Linkedin, Github} from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
-import { SiDatacamp, SiKaggle, SiMavenanalytics, SiCoursera, SiCredly, SiHackerrank, SiCodeforces } from 'react-icons/si';
+import { SiDatacamp } from 'react-icons/si';
+import { SiKaggle } from 'react-icons/si';
+import { SiMavenanalytics } from 'react-icons/si';
+import { SiCoursera } from 'react-icons/si';
+import { SiCredly } from 'react-icons/si';
+import { SiHackerrank } from 'react-icons/si';
+import { SiCodeforces } from 'react-icons/si';
 
 
 const Home = () => {
