@@ -4,12 +4,14 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, Download, Mail, Linkedin, Github} from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
-import { SiDatacamp } from 'react-icons/si';
-import { SiKaggle } from 'react-icons/si';
-import { SiCoursera } from 'react-icons/si';
-import { SiCredly } from 'react-icons/si';
-import { SiHackerrank } from 'react-icons/si';
-import { SiCodeforces } from 'react-icons/si';
+
+import { FaGraduationCap } from 'react-icons/fa'; // For DataCamp
+import { FaDatabase } from 'react-icons/fa'; // For Kaggle
+import { FaUniversity } from 'react-icons/fa'; // For Maven
+import { FaCertificate } from 'react-icons/fa'; // For Coursera
+import { FaAward } from 'react-icons/fa'; // For Credly
+import { FaCode } from 'react-icons/fa'; // For HackerRank
+import { FaRocket } from 'react-icons/fa'; // For Codeforces
 
 
 const Home = () => {
@@ -144,32 +146,32 @@ const Home = () => {
             {/* Platform Icons */}
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-green-600 flex items-center justify-center">
-                <SiDatacamp className="h-16 w-16" />
+                <FaGraduationCap className="h-16 w-16" />
               </Button>
             </a>
             <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-blue-600 flex items-center justify-center">
-                <SiKaggle className="h-16 w-16" />
+                <FaDatabase className="h-16 w-16" />
               </Button>
             </a>
             <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-blue-600 flex items-center justify-center">
-                <SiCoursera className="h-16 w-16" />
+                <FaCertificate className="h-16 w-16" />
               </Button>
             </a>
             <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-slate-900 flex items-center justify-center">
-                <SiCredly className="h-16 w-16" />
+                <FaAward className="h-16 w-16" />
               </Button>
             </a>
             <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-black flex items-center justify-center">
-                <SiHackerrank className="h-16 w-16" />
+                <FaCode className="h-16 w-16" />
               </Button>
             </a>
             <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-24 w-24 text-slate-600 hover:text-slate-900 flex items-center justify-center">
-                <SiCodeforces className="h-16 w-16" />
+                <FaRocket className="h-16 w-16" />
               </Button>
             </a>
           </div>
