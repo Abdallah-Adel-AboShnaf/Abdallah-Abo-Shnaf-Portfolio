@@ -127,54 +127,54 @@ const Home = () => {
             {/* Social Media Icons */}
             <a href="mailto:aboshnaf.me@gmail.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <Mail className="h-10 w-10" />
+                <Mail className="h-16 w-16" />
               </Button>
             </a>
             <a href="https://www.linkedin.com/in/abdallah-adel-aboshnaf/"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <Linkedin className="h-10 w-10" />
+                <Linkedin className="h-16 w-16" />
               </Button>
             </a>
             <a href="https://github.com/Abdallah-Adel-AboShnaf"  target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <Github className="h-10 w-10" />
+                <Github className="h-16 w-16" />
               </Button>
             </a>
 
             {/* Platform Icons */}
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-green-600">
-                <SiDatacamp className="h-10 w-10" />
+                <SiDatacamp className="h-16 w-16" />
               </Button>
             </a>
 
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <SiKaggle className="h-10 w-10" />
+                <SiKaggle className="h-16 w-16" />
               </Button>
             </a>
 
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
-                <SiCoursera className="h-10 w-10" />
+                <SiCoursera className="h-16 w-16" />
               </Button>
             </a>
 
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <SiCredly className="h-10 w-10" />
+                <SiCredly className="h-16 w-16" />
               </Button>
             </a>
 
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-black-900">
-                <SiHackerrank className="h-10 w-10" />
+                <SiHackerrank className="h-16 w-16" />
               </Button>
             </a>
 
             <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
-                <SiCodeforces  className="h-10 w-10" />
+                <SiCodeforces  className="h-16 w-16" />
               </Button>
             </a>
           </div>
