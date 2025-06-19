@@ -15,6 +15,8 @@ import { FaAward } from 'react-icons/fa'; // For Credly
 import { FaCode } from 'react-icons/fa'; // For HackerRank
 import { FaRocket } from 'react-icons/fa'; // For Codeforces
 
+import { ArrowRight, Download } from "lucide-react";
+
 const Home = () => {
   const handleLearnMore = () => {
     const aboutSection = document.querySelector('#about');
