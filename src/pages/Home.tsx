@@ -114,8 +114,9 @@ const Home = () => {
             </Card>
           </div>
 
-          {/* Social Links */}
-          <div className="flex justify-center space-x-4 pt-8">
+          {/* Social Links and Platform Links */}
+          <div className="flex flex-wrap justify-center space-x-4 pt-8">
+            {/* Social Media Icons */}
             <a href="mailto:abdallah.adel.abdallah10@gmail.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
                 <Mail className="h-6 w-6" />
@@ -131,75 +132,63 @@ const Home = () => {
                 <Github className="h-6 w-6" />
               </Button>
             </a>
-          </div>
 
-          {/* Platform Links */}
-          <div className="pt-6">
-            <h3 className="text-lg font-semibold text-slate-700 mb-4">Find me on these platforms</h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" className="flex flex-col items-center p-4 h-auto text-slate-600 hover:text-blue-600">
-                  <div className="w-8 h-8 bg-blue-600 rounded-lg mb-2 flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">DC</span>
-                  </div>
-                  <span className="text-xs">DataCamp</span>
-                </Button>
-              </a>
-              
-              <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" className="flex flex-col items-center p-4 h-auto text-slate-600 hover:text-blue-600">
-                  <div className="w-8 h-8 bg-cyan-500 rounded-lg mb-2 flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">K</span>
-                  </div>
-                  <span className="text-xs">Kaggle</span>
-                </Button>
-              </a>
-              
-              <a href="https://www.mavenanalytics.io" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" className="flex flex-col items-center p-4 h-auto text-slate-600 hover:text-blue-600">
-                  <div className="w-8 h-8 bg-orange-500 rounded-lg mb-2 flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">M</span>
-                  </div>
-                  <span className="text-xs">Maven</span>
-                </Button>
-              </a>
-              
-              <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" className="flex flex-col items-center p-4 h-auto text-slate-600 hover:text-blue-600">
-                  <div className="w-8 h-8 bg-blue-700 rounded-lg mb-2 flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">C</span>
-                  </div>
-                  <span className="text-xs">Coursera</span>
-                </Button>
-              </a>
-              
-              <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" className="flex flex-col items-center p-4 h-auto text-slate-600 hover:text-blue-600">
-                  <div className="w-8 h-8 bg-green-600 rounded-lg mb-2 flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">Cr</span>
-                  </div>
-                  <span className="text-xs">Credly</span>
-                </Button>
-              </a>
-              
-              <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" className="flex flex-col items-center p-4 h-auto text-slate-600 hover:text-blue-600">
-                  <div className="w-8 h-8 bg-green-500 rounded-lg mb-2 flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">HR</span>
-                  </div>
-                  <span className="text-xs">HackerRank</span>
-                </Button>
-              </a>
-              
-              <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" className="flex flex-col items-center p-4 h-auto text-slate-600 hover:text-blue-600">
-                  <div className="w-8 h-8 bg-red-600 rounded-lg mb-2 flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">CF</span>
-                  </div>
-                  <span className="text-xs">CodeForces</span>
-                </Button>
-              </a>
-            </div>
+            {/* Platform Icons */}
+            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">DC</span>
+                </div>
+              </Button>
+            </a>
+            
+            <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <div className="w-6 h-6 bg-cyan-500 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">K</span>
+                </div>
+              </Button>
+            </a>
+            
+            <a href="https://www.mavenanalytics.io" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">M</span>
+                </div>
+              </Button>
+            </a>
+            
+            <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <div className="w-6 h-6 bg-blue-700 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">C</span>
+                </div>
+              </Button>
+            </a>
+            
+            <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <div className="w-6 h-6 bg-green-600 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">Cr</span>
+                </div>
+              </Button>
+            </a>
+            
+            <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">HR</span>
+                </div>
+              </Button>
+            </a>
+            
+            <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <div className="w-6 h-6 bg-red-600 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">CF</span>
+                </div>
+              </Button>
+            </a>
           </div>
         </div>
       </div>
