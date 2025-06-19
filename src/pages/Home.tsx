@@ -142,27 +142,27 @@ const Home = () => {
             </a>
 
             {/* Platform Icons */}
-            <a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.datacamp.com/portfolio/AbdallahAdelAbdallah" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-16 w-16 text-slate-600 hover:text-green-600 flex items-center justify-center">
                 <SiDatacamp className="h-16 w-16" />
               </Button>
             </a>
-            <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.kaggle.com/abdallah3del" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-16 w-16 text-slate-600 hover:text-blue-600 flex items-center justify-center">
                 <FaKaggle className="h-16 w-16" />
               </Button>
             </a>
-            <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.coursera.org/learner/abo-shnaf" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-16 w-16 text-slate-600 hover:text-blue-600 flex items-center justify-center">
                 <SiCoursera className="h-16 w-16" />
               </Button>
             </a>
-            <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.credly.com/users/abo-shnaf" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-16 w-16 text-slate-600 hover:text-slate-900 flex items-center justify-center">
                 <SiCredly className="h-16 w-16" />
               </Button>
             </a>
-            <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.hackerrank.com/profile/abdallahadel1851" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="h-16 w-16 text-slate-600 hover:text-black flex items-center justify-center">
                 <SiHackerrank className="h-16 w-16" />
               </Button>
